@@ -96,7 +96,9 @@ window.ASCVDRisk = window.ASCVDRisk || {};
           code: {
             $or: ['http://loinc.org|14647-2', // Cholesterol [Moles/volume] in Serum or Plasma
               'http://loinc.org|2093-3', // Cholesterol [Mass/volume] in Serum or Plasma
+              'http://snomed.info/sct|412808005', // Serum total cholesterol measurement (CBL)
               'http://loinc.org|2085-9', // Cholesterol in HDL [Mass/volume] in Serum or Plasma
+              'http://snomed.info/sct|166832000', // Serum HDL cholesterol measurement (CBL)
               'http://loinc.org|8480-6', // Systolic blood pressure (CBL)
               'http://loinc.org|55284-4', // Blood pressure systolic and diastolic
               'http://loinc.org|72166-2', // Tobacco smoking status
