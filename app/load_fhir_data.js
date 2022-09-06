@@ -94,10 +94,14 @@ window.ASCVDRisk = window.ASCVDRisk || {};
         type: 'Observation',
         query: {
           code: {
-            $or: ['http://loinc.org|14647-2', 'http://loinc.org|2093-3',
-              'http://loinc.org|2085-9', 'http://loinc.org|8480-6',
-              'http://loinc.org|55284-4', 'http://loinc.org|72166-2',
-              'http://snomed.info/sct|229819007',
+            $or: ['http://loinc.org|14647-2', // Cholesterol [Moles/volume] in Serum or Plasma
+              'http://loinc.org|2093-3', // Cholesterol [Mass/volume] in Serum or Plasma
+              'http://loinc.org|2085-9', // Cholesterol in HDL [Mass/volume] in Serum or Plasma
+              'http://loinc.org|8480-6', // Systolic blood pressure (CBL)
+              'http://loinc.org|55284-4', // Blood pressure systolic and diastolic
+              'http://loinc.org|72166-2', // Tobacco smoking status
+              'http://snomed.info/sct|229819007', // 	Tobacco use and exposure
+              'http://snomed.info/sct|266918002' // Tobacco smoking consumption (CBL)
             ],
           },
           date: `gt${dateInPast.toJSON()}`,
